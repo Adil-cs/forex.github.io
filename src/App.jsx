@@ -98,7 +98,7 @@ export default function App() {
 
 
     
-      <div class="container">
+    <div id="currency-table" class="container">
         <div class="table">
           <table>
             <thead>

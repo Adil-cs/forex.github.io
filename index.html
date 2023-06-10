@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite - React</title>
+    <title>Vite + React</title>
   </head>
   <body>
     <div id="root"></div>
-<<<<<<< HEAD
-    <!-- Remove the script tag for main.jsx -->
-=======
-    <h1>Hello</h1>
     <script type="module" src="/src/main.jsx"></script>
->>>>>>> origin/master
+    <script>
+      // Access the table element by id
+      const table = document.getElementById("currency-table");
+
+      // Append the table to the root element
+      const rootElement = document.getElementById("root");
+      rootElement.appendChild(table);
+    </script>
   </body>
 </html>
