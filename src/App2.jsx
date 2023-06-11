@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './App.css';
 
 
-export default function App() {
+
+export default function App2() {
 
   const [amount, setAmount] = useState("");
   const [convertedAmount, setConvertedAmount] = useState("");
@@ -95,35 +97,36 @@ export default function App() {
 
   // Call the function to fetch the exchange rates
   return (
-    <div className="container">
-      <table className="table table-striped table-bordered">
-        <thead className="thead-dark">
-          <tr>
-            <th>Currency</th>
+    
 
-            <th>We Buy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>USD</td>
-            <td>{usdWeSellRate}</td>
-          </tr>
-          <tr>
-            <td>AFN</td>
-            <td>{afnWeSellRate}</td>
-          </tr>
-          <tr>
-            <td>PKR</td>
-            <td>{pkrWeSellRate}</td>
-          </tr>
-          <tr>
-            <td>EUR</td>
-            <td>{eurWeSellRate}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container">
+  <table className="table table-striped table-bordered">
+    <thead className="thead-dark">
+      <tr>
+        <th>Currency</th>
+        <th>We Sell</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td> USD</td>
+        <td>{usdWeBuyRate}</td>
+      </tr>
+      <tr>
+        <td>AFN</td>
+        <td>{afnWeBuyRate}</td>
+      </tr>
+      <tr>
+        <td> PKR</td>
+        <td>{pkrWeBuyRate}</td>
+      </tr>
+      <tr>
+        <td>EUR</td>
+        <td>{eurWeBuyRate}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 

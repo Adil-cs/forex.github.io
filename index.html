@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="forextable">
+    <div class="container">
+      <h2 style="margin-bottom: 2em;"><span class="bold">Forex</span> Rates</h2>
+
+     
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#transfer">Transfer</a></li>
+        <li><a data-toggle="tab" href="#buy">Buy</a></li>
+        <li><a data-toggle="tab" href="#sell">Sell</a></li>
+     
+      </ul>
+    
+      <div class="tab-content">
+        <div id="transfer" class="tab-pane fade in active">
+          <h3>TRANSFER</h3>
+          <div id="root">
+          </div>
+        </div>
+        <div id="buy" class="tab-pane fade">
+          <h3>BUY</h3>
+          <div id="root1">
+          </div>
+        </div>
+        <div id="sell" class="tab-pane fade">
+          <h3>SELL</h3>
+          <div id="root2">
+          </div>
+        </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script type="module" src="/src/main.jsx">
+  </script>
+
+</body>
+
 </html>

@@ -11,13 +11,21 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
+    "country-flag-icons": "^1.5.7",
+    "flag-icon-css": "^4.1.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.7.4",
+    "react-country-flags": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "react-flags-select": "^2.2.3",
+    "react-icons": "^4.9.0",
+    "react-select": "^5.7.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
